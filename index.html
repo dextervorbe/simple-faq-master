@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple FAQ | devChallenges.io</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          sans-serif;
+        background: #f9fafb;
+        color: #1f2937;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem 2.5rem;
+      }
+
+      .layout {
+        width: 100%;
+        max-width: 48rem;
+      }
+
+      @media (min-width: 900px) {
+        .layout {
+          width: min(100%, 65vw);
+          max-width: 52rem;
+        }
+      }
+
+      .page-header {
+        background: #ffffff;
+        text-align: center;
+        padding: 3rem 2rem 2.75rem;
+      }
+
+      .page-header h1 {
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+        font-weight: 700;
+        color: #000000;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+      }
+
+      .page-header p {
+        margin-top: 0.75rem;
+        font-size: clamp(0.9375rem, 1.5vw, 1rem);
+        font-weight: 400;
+        color: #6b7280;
+        line-height: 1.55;
+        max-width: 28rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .page-body {
+        background: #f9fafb;
+        padding: 2.5rem 2rem 2.75rem;
+        text-align: left;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 1rem 0.75rem 1.5rem;
+        }
+
+        .page-header {
+          padding: 2.25rem 1.25rem 2rem;
+        }
+
+        .page-body {
+          padding: 1.75rem 1.25rem 2rem;
+        }
+      }
+
+      .faq-item h2 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #000000;
+        line-height: 1.35;
+        margin-bottom: 1rem;
+      }
+
+      .faq-item > p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #1f2937;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .faq-item ol,
+      .faq-item ul {
+        margin-bottom: 1rem;
+        padding-left: 1.25rem;
+        color: #1f2937;
+      }
+
+      .faq-item li {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 0.65rem;
+      }
+
+      .faq-item li:last-child {
+        margin-bottom: 0;
+      }
+
+      .faq-item a {
+        color: #3b82f6;
+        text-decoration: none;
+      }
+
+      .faq-item a:hover {
+        text-decoration: underline;
+      }
+
+      .faq-divider {
+        border: 0;
+        border-top: 1px solid #e5e7eb;
+        margin: 2.25rem 0;
+      }
+
+      .author-info {
+        margin-top: 2rem;
+        font-size: 0.875rem;
+        text-align: center;
+        color: #6b7280;
+        max-width: 48rem;
+        width: 100%;
+      }
+
+      .author-info a {
+        color: #3b82f6;
+        text-decoration: none;
+      }
+
+      .author-info a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="page-header">
+        <h1>Frequently Asked Questions</h1>
+        <p>Browse through the most frequently asked questions</p>
+      </header>
+
+      <div class="page-body">
+        <article class="faq-item">
+          <h2>How can I track my order?</h2>
+          <p>You can track your order using the following steps:</p>
+          <ol>
+            <li>
+              Go to the <a href="#">Tracking page</a>.
+            </li>
+            <li>Enter your order number and email address.</li>
+            <li>
+              Click on the Track Order button to view the current status of
+              your shipment.
+            </li>
+          </ol>
+          <p>
+            If you encounter any issues, please visit our
+            <a href="#">Help Center</a>.
+          </p>
+        </article>
+
+        <hr class="faq-divider" />
+
+        <article class="faq-item">
+          <h2>What is your return policy?</h2>
+          <p>
+            We offer a 30-day return policy on most items. Here are some key
+            points:
+          </p>
+          <ul>
+            <li>
+              <strong>Items must be in original condition:</strong> Unworn,
+              unused, and unwashed.
+            </li>
+            <li>
+              <strong>Include original packaging and tags:</strong> All items
+              should be returned with their original packaging and tags.
+            </li>
+            <li>
+              <strong>Proof of purchase:</strong> A receipt or proof of purchase
+              is required.
+            </li>
+          </ul>
+          <p>
+            For more detailed information, read our full
+            <a href="#">Return Policy</a>.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <footer class="author-info">
+      Coded by <a href="#">Your Name Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </footer>
+  </body>
+</html>
