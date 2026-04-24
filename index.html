@@ -130,12 +130,20 @@
       }
 
       .faq-item a {
-        color: #3b82f6;
+        /* #1d4ed8: darker than #3b82f6 so link text meets WCAG AA (~4.5:1) on #fff / #f9fafb */
+        color: #1d4ed8;
         text-decoration: none;
       }
 
       .faq-item a:hover {
+        color: #1e3a8a;
         text-decoration: underline;
+      }
+
+      .faq-item a:focus-visible {
+        outline: 2px solid #1d4ed8;
+        outline-offset: 2px;
+        border-radius: 2px;
       }
 
       .faq-divider {
@@ -154,12 +162,19 @@
       }
 
       .author-info a {
-        color: #3b82f6;
+        color: #1d4ed8;
         text-decoration: none;
       }
 
       .author-info a:hover {
+        color: #1e3a8a;
         text-decoration: underline;
+      }
+
+      .author-info a:focus-visible {
+        outline: 2px solid #1d4ed8;
+        outline-offset: 2px;
+        border-radius: 2px;
       }
     </style>
   </head>
